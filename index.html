@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <!-- ------------------- CSS Links -------------- -->
+    
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/places.css">
+    <link rel="stylesheet" href="./css/videos.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <!-- ------------------- Icons Links -------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ----------------- Link Swiper's CSS ---------- -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <!-- ------------------------------------- Navbar section ----------------------------------------------- -->
+    
+    <header>
+        <nav class="navigation">
+            <a href="#home" class="logo">My Logo</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <i class='bx bx-moon dark'></i>
+
+            <ul class="navbar">
+                <li class="nav-item"><a href="#home" class="nav-link home-active">home</a></li>
+                <li class="nav-item"><a href="#places" class="nav-link">places</a></li>
+                <li class="nav-item"><a href="#videos" class="nav-link">videos</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">about us</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- ----------------------------------------- Main Part ------------------------------------------------ -->
+
+    <main>
+        <div class="up-arrow">
+            <i class='bx bx-up-arrow-alt up neon'></i>
+        </div>
+        <!-- --------------------- Home section ---------------------- -->
+    
+        <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide container">
+                    <img src="./res/images/home1.webp" alt="Cap Carbon">
+                    <div class="home-text text-focus-in-3s">
+                        <span>Discover Now</span>
+                        <h1>Fly Over Cap Carbon</h1>
+                        <a href="#places" class="btn neon">Explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide container">
+                    <img src="./res/images/home2.jpg" alt="Tichy">
+                    <div class="home-text">
+                        <span>Discover Now</span>
+                        <h1 class="text-focus-in">Explore Tichy bay</h1>
+                        <a href="#places" class="btn neon">Explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide container">
+                    <img src="./res/images/home4.jpg" alt="Pic des Singes">
+                    <div class="home-text">
+                        <span>Discover Now</span>
+                        <h1 class="text-focus-in">Relax with Bejaia Landscapes</h1>
+                        <a href="#places" class="btn neon">Explore</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+        
+        </section>
+    
+        <!-- --------------------- Places section ---------------------- -->
+    
+        <section class="places" id="places">
+            <div class="heading">
+                <h2>Find The Most Attractive Places</h2>
+            </div>
+            <div class="places-container">
+                <div class="box fade-in-2 fade-in-2-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/cap-carbon.webp" alt="Cap Carbon">
+                    </div>
+                    <div class="place-text">
+                        <h3>Cap Carbon</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in-2 fade-in-3-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/tichy.jpg" alt="Tichy bay">
+                    </div>
+                    <div class="place-text">
+                        <h3>Tichy bay</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in-2 fade-in-4-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/gouraya.jpg" alt="Yemma Gouraya">
+                    </div>
+                    <div class="place-text">
+                        <h3>Yemma Gouraya</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in-2 fade-in-2-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/pic-des-singes.webp" alt="Monkey Peak">
+                    </div>
+                    <div class="place-text">
+                        <h3>Monkey Peak</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in fade-in-3-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/centre.jpg" alt="Bejaia">
+                    </div>
+                    <div class="place-text">
+                        <h3>Bejaia center</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in fade-in-4-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/bordj.jpg" alt="Turkish Bordj">
+                    </div>
+                    <div class="place-text">
+                        <h3>Turkish Bordj</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in fade-in-2-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/aokas.jpg" alt="Aokas Grotto">
+                    </div>
+                    <div class="place-text">
+                        <h3>Aokas Grotto</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+                <div class="box fade-in fade-in-3-mobile">
+                    <div class="place-img">
+                        <img src="./res/images/bejaia6.jpg" alt="Aiguades">
+                    </div>
+                    <div class="place-text">
+                        <h3>Aiguades</h3>
+                    </div>
+                    <i class='bx bx-right-arrow-alt place-icon'></i>
+                </div>
+            </div>
+        </section>
+    
+        <!-- --------------------- Places section ---------------------- -->
+        
+        <section class="videos" id="videos">
+            <div class="heading">
+                <h2>See The Best Views</h2>
+            </div>
+            <div class="video-container text-focus-in">
+                <video src="./res/videos/bej.mp4" muted autoplay loop></video>
+            </div>
+    
+        </section>
+        
+        <!-- --------------------- About section ---------------------- -->
+    
+        <section class="about" id="about">
+            <div class="about-text">
+                <h3 class="fade-in-2">The Best Organiser <br>Trip</h3>
+                <p class="fade-in-3">Make your journey <br>as the unique and unforgettable ever</p>
+                <a href="#contact" class="btn neon fade-in-4">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="./res/images/kaya.jpg" alt="Sea">
+            </div>
+        </section>
+
+        <!-- --------------------- contact section ---------------------- -->
+
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="left-col">
+                    <img src="./res/images/bejaia3.jpg" alt="Bejaia">
+                </div>
+                <div class="right-col">
+                    <div class="theme-switch-wrapper">
+                    </div>
+                    <p class="description fade-in-2">Planning to visit Bejaia soon? Get insider tips on where to go, things to do and find best deals for your next adventure.</p>
+                    <form id="contact-form" class="fade-in-3">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        <label for="message">Message</label>
+                        <textarea rows="6" placeholder="Your Message" id="message" name="message" required>
+                        </textarea>
+                        <button type="submit" id="submit" name="submit" class="btn neon fade-in-4">Send</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --------------------------------------- Footer ---------------------------------------------------- -->
+    <footer>
+        <section class="footer">
+            <div class="footer-box fade-in-2">
+                <h2>Travel</h2>
+                <p>Get your Saldae dream<br>become the big journey<br>you ever had</p>
+                <div class="social fade-in-3">
+                    <a href="https://fr-fr.facebook.com/"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=fr"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.tiktok.com/fr/"><i class="bx bxl-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-box fade-in-4">
+                <h3>Services</h3>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+            </div>
+            <div class="footer-box fade-in-4">
+                <h3>Offices</h3>
+                <li><a href="#">Algiers</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Barcelona</a></li>
+                <li><a href="#">Milan</a></li>
+            </div>
+            <div class="footer-box fade-in-4">
+                <h3>Contact Us</h3>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Our Blog</a></li>
+                <li><a href="#">Customers</a></li>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy; Designed by <a href="#">BiBi</a> & <a href="https://github.com/lodziek">AHMED ZAID Aghiles</a> All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ------------------------------------------ Swiper JS ---------------------------------------------- -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ------------------------------------------ SMTP JS ---------------------------------------------- -->
+    <script src="./js/smtp.js"></script>
+
+
+    <!-- --------------------------------------- Javascript Link ------------------------------------------- -->
+    <script src="./js/script.js"></script>
+
+    <!-- Animation JS -->
+    <script src="./js/animation.js"></script>
+
+    <!-- Dark Mode JS -->
+    <script src="./js/darkmode.js"></script>
+
+    <!-- Hamburger JS -->
+    <script src="./js/hamburger.js"></script>
+
+    <!-- Header Scroll JS -->
+    <script src="./js/headerScroll.js"></script>
+
+    <!-- Scroll to Top JS -->
+    <script src="./js/scrollToTop.js"></script>
+</body> 
+</html>

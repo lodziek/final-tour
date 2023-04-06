@@ -1,0 +1,63 @@
+:root{
+    --text-color: #021f2a;
+    --bg-color: #fff;
+    --section-bg: #f4f4f4;
+}
+
+.dark-it{
+    --text-color: #fff;
+    --bg-color: #021f2a;
+    --section-bg: #021f2a;
+}
+
+/* ---------------- videos Section ---------------------- */
+
+#videos{
+    background: var(--section-bg);
+}
+
+.video-container{
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+}
+
+.video-container video{
+    width: 800px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--bg-color);
+}
+
+.about-text h3{
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+.about-text p{
+    font-size: 0.94rem;
+    text-align: justify;
+    margin: 0.5rem;
+}
+
+.about-image{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-image img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}

@@ -1,0 +1,144 @@
+/* --------------- Google fonts link -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* --------------- Color Variables ------------------ */
+
+:root{
+    --text-color: #021f2a;
+    --bg-color: #fff;
+    --txt-shadow:#8a8a8a;
+}
+
+/* --------------- Scroll Bar ---------------------- */
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--text-color);
+    border-radius: 5rem;
+}
+
+/* ---------------- Logo ----------------- */
+
+.logo{
+    font-family: 'The Nautigal', cursive;
+    font-size: 1.9rem;
+    font-weight: 400;
+    font-style: oblique;
+    color: var(--bg-color);
+    text-shadow: 2px 1px 2px var(--txt-shadow);
+    letter-spacing: 2px;
+    transition: 0.7s;
+}
+
+.logo:hover{
+    color: #ff7016;
+}
+
+/* ---------------- Navbar ----------------*/
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.navigation.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 0 4px rgb(14 55 54 / 0.15);
+}
+
+.navigation.shadow .logo{
+    color: var(--text-color);
+}
+
+.navigation.shadow .dark{
+    color: var(--text-color);
+}
+
+.navigation.shadow .navbar a{
+    color: var(--text-color);
+}
+
+.navigation.shadow .navbar a::after{
+    background: var(--text-color);
+}
+
+.navbar{
+    display: flex;
+    column-gap: 4rem;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--bg-color);
+    letter-spacing: 2px;
+}
+
+.nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--bg-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.6s;
+}
+
+.nav-link:hover::after,
+.home-active::after{
+    width: 100%;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+    display: none;
+}
+
+.dark{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--bg-color);
+    margin-left: 15px;
+    cursor: pointer;
+}

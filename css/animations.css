@@ -1,0 +1,129 @@
+/* --------------- Color Variables ------------------ */
+
+:root{
+    --btn-color:#A9A9A9;
+}
+
+.dark-it{
+    --btn-color:#021f2a;
+}
+
+/* --------------- Animations ------------------- */
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+  
+.text-focus-in-3s {
+	-webkit-animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in-3s {
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in-3s {
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.neon {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: var(--btn-color);
+    font-family: Cursive;
+}
+@keyframes neonAnim {
+from {
+    text-shadow:
+      0 0 10px rgba(169, 169, 169, .7),
+      0 0 40px rgba(169, 169, 169, .7),
+      0 0 100px rgba(169, 169, 169, .7);
+  }
+  to {
+    text-shadow:
+      0 0 5px rgba(169, 169, 169, .7),
+      0 0 20px rgba(169, 169, 169, .7),
+      0 0 60px rgba(169, 169, 169, .7);
+  }
+}
+
+/* -------------- Fade-In --------------- */
+
+.fade-in{
+    opacity: 0;
+    transition: opacity .9s ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+
+.fade-in-2{
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+.fade-in-2.appear{
+    opacity: 1;
+}
+
+.fade-in-3{
+    opacity: 0;
+    transition: opacity .8s ease-in;
+}
+
+.fade-in-3.appear{
+    opacity: 1;
+}
+
+.fade-in-4{
+    opacity: 0;
+    transition: opacity 1.4s ease-in;
+}
+
+.fade-in-4.appear{
+    opacity: 1;
+}

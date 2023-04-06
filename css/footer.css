@@ -1,0 +1,101 @@
+/* --------------- Google fonts link -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* --------------- Color Variables ------------------ */
+
+:root{
+    --text-color: #021f2a;
+    --text-color-1: #021f2a;
+    --bg-color: #fff;
+}
+
+.dark-it{
+    --text-color: #fff;
+    --bg-color: #021f2a;
+    --text-color-1: #d39668;
+}
+
+/* --------------- Scroll Bar ---------------------- */
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--text-color);
+    border-radius: 5rem;
+}
+
+/* --------------- Footer ---------------------- */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p{
+    font-size: 0.94rem;
+    margin-bottom: 10px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social a{
+    font-size: 24px;
+    color: var(--text-color);
+    margin-right: 1rem;
+}
+
+.footer-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a{
+    color: var(--text-color);
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.copyright p a{
+    text-decoration: none;
+    color: var(--text-color-1);
+}

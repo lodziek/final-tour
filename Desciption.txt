@@ -1,0 +1,17 @@
+In this project, I created a responsive travel website to promote the beauty of Bejaia.
+
+I used Five parts ( Home, Places, Videos, About Us and Contact Us) where each one is integrated in a navigation bar.
+
+In the Navigation section, every section of the website is linked. At the top left, you'll find the Logo and at the top
+
+right the dark mode button.
+
+In the Home section, a photo gallery shows the main offers and all of this are linked to the next section.
+
+In the Places section, a grid of cards mentions the places that you want visit.
+
+In the videos section, an aerial view makes the visitors another point of view of the region to visit.
+
+In the About Us section, a summerised presentation is made.
+
+In the Contact Us section, every visitor can get in touch with the travel agency.

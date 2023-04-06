@@ -1,0 +1,116 @@
+/* --------------- Google fonts link -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* --------------- Color Variables ------------------ */
+
+:root{
+    --text-color: #021f2a;
+    --bg-color: #fff;
+}
+
+.dark-it{
+    --text-color: #fff;
+    --bg-color: #021f2a;
+}
+
+/* --------------- Scroll Bar ---------------------- */
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--text-color);
+    border-radius: 5rem;
+}
+
+/* ---------- up to scroll ----------------- */
+
+.up-arrow{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 100000000;
+}
+
+.up{
+    color: var(--bg-color);
+    font-size: 24px;
+}
+
+.up:hover{
+    color: var(--bg-color);
+}
+
+.up-arrow.active{
+    bottom: 30px;
+    opacity: 1;
+}
+
+/* ----------- Button  ------------------ */
+
+.btn{
+display: inline-block;
+padding: 0.7rem 1.3rem;
+background: var(--text-color);
+font-weight: 400;
+font-size: 1rem;
+border-radius: 5px;
+transition: 0.5s;
+letter-spacing: 2px;
+}
+
+.btn:hover{
+opacity: 0.8;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+color: var(--bg-color) !important;
+opacity: .75;
+}
+.swiper-pagination-bullet-active{
+background: var(--bg-color) !important;
+opacity: 0.7 !important;
+}
+
+/* ---------------- Sections ---------------------- */
+
+section{
+    padding: 50px 100px;
+}
+
+/* ---------------- Dark-It ---------------------- */
+
+section.dark-it{
+    background: var(--bg-color);
+}
